@@ -16,7 +16,9 @@
   ],
   "scripts": {
     "test": "jasmine && jasmine spec/e2e/*.js",
-    "jsdoc": "jsdoc -c docs/conf.json"
+    "jsdoc": "jsdoc -c docs/conf.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -44,7 +46,8 @@
   },
   "homepage": "https://github.com/googlemaps/google-maps-services-js",
   "dependencies": {
-    "uuid": ">=2.2.1"
+    "uuid": ">=2.2.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jasmine": ">=2.3.2 <2.5.0",
@@ -52,5 +55,9 @@
     "priorityqueuejs": "^1.0.0",
     "q": "^1.4.1"
   },
-  "files": ["lib", "bin"]
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "snyk": true
 }

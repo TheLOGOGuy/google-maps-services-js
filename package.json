@@ -47,7 +47,7 @@
     "uuid": ">=2.2.1"
   },
   "devDependencies": {
-    "jasmine": ">=2.3.2 <2.5.0",
+    "jasmine": ">=2.5.1",
     "jsdoc": "^3.4.0",
     "priorityqueuejs": "^1.0.0",
     "q": "^1.4.1"
